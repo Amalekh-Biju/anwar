@@ -1,0 +1,77 @@
+{
+  "title": "Thejus Homes",
+  "image": [
+    "/thejus/Thejus0.jpeg",
+    "/thejus/Thejus1.jpeg",
+    "/thejus/Thejus2.jpeg",
+    "/thejus/Thejus3.jpeg",
+    "/thejus/Thejus4.jpeg",
+    "/thejus/Thejus5.jpeg",
+    "/thejus/Thejus6.jpeg"
+  ],
+  "description": "Court Doubles as a Banquet Hall",
+  "longDescription": "A charming, private retreat with open, airy interiors and lush, landscaped surroundings. This villa combines modern comforts with a relaxed ambiance, providing a serene escape with a touch of luxury.",
+  "tags": [
+    "Locker Rooms",
+    "Restrooms",
+    "First Aid Kits ",
+    "Parking",
+    "Equipment",
+    "Spectator Area"
+  ],
+
+  "rooms": [
+    {
+      "name": "Room 1",
+      "image": "/thejus/Thejus1.jpeg",
+      "capacity": 3,
+      "desc": "Relax in cozy comfort with a peaceful ambiance for restful sleep.",
+      "breakfast": true,
+      "cost": "₹ 3750/night"
+    },
+    {
+      "name": "Room 2",
+      "image": "/thejus/Thejus2.jpeg",
+      "capacity": 2,
+      "desc": "Unwind in a spacious room designed for comfort and relaxation.",
+      "breakfast": true,
+      "cost": "₹ 2750/night"
+    },
+    {
+      "name": "Room 3",
+      "image": "/thejus/Thejus3.jpeg",
+      "capacity": 2,
+      "desc": "Enjoy a cozy haven with a warm, restful atmosphere.",
+      "breakfast": true,
+      "cost": "₹ 2750/night"
+    }
+  ],
+
+  "reviews": [
+    {
+      "id": "1",
+      "name": "Advaith Narayanan",
+      "rating": 3,
+      "comment": "This Place is super spaciouos and the service is great! definitely coming back again"
+    },
+    {
+      "id": "1",
+      "name": "John Doe",
+      "rating": 5,
+      "comment": "Great place to stay!"
+    },
+    {
+      "id": "1",
+      "name": "Skibidi Vijayan",
+      "rating": 5,
+      "comment": "Great place to stay! athe athe"
+    },
+    {
+      "id": "2",
+      "name": "Jane Doe",
+      "rating": 4,
+      "comment": "Beautiful property!"
+    }
+  ],
+  "link": "/thejus"
+}

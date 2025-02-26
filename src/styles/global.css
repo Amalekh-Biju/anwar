@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+* {
+    font-family: 'Raleway Variable', serif;
+}
+
+.prata {
+    font-family: 'Prata', serif;
+}
