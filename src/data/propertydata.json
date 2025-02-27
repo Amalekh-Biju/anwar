@@ -22,55 +22,34 @@
 
   "rooms": [
     {
-      "name": "Room 1",
+      "name": "Room Chennellu",
       "image": "/thejus/Thejus1.jpeg",
-      "capacity": 3,
-      "desc": "Relax in cozy comfort with a peaceful ambiance for restful sleep.",
-      "breakfast": true,
+      "premium": false,
+      "capacity": 2,
+      "desc": "Step into a world where comfort meets sophistication, where every detail is crafted for your ultimate relaxation. Our DOUBLE DELUXE Room is more than just a place to stay; it’s an experience. Designed with a perfect blend of modern luxury and timeless charm, this room invites you to unwind in style.",
+      "tags": ["Breakfast", "Restrooms", "First Aid Kits", "Parking"],
+      "diamensions": "8x4=32 Sqmtr",
       "cost": "₹ 3750/night"
     },
     {
-      "name": "Room 2",
+      "name": "Room Chembavu",
       "image": "/thejus/Thejus2.jpeg",
+      "premium": false,
       "capacity": 2,
-      "desc": "Unwind in a spacious room designed for comfort and relaxation.",
-      "breakfast": true,
+      "desc": "Step into a world where comfort meets sophistication, where every detail is crafted for your ultimate relaxation. Our DOUBLE DELUXE Room is more than just a place to stay; it’s an experience. Designed with a perfect blend of modern luxury and timeless charm, this room invites you to unwind in style.",
+      "tags": ["Breakfast", "Restrooms", "First Aid Kits", "Parking"],
+      "diamensions": "8x4=32 Sqmtr",
       "cost": "₹ 2750/night"
     },
     {
-      "name": "Room 3",
+      "name": "Room Njavara - Royal Suite",
       "image": "/thejus/Thejus3.jpeg",
-      "capacity": 2,
-      "desc": "Enjoy a cozy haven with a warm, restful atmosphere.",
-      "breakfast": true,
+      "premium": true,
+      "capacity": 3,
+      "desc": "Step beyond the ordinary and enter a realm of grandeur with our ROYAL SUITE, where every corner whispers elegance, and every detail exudes luxury. This is not just a room – it is a sanctuary fit for royalty, a space where lavishness meets tranquillity and where your most extraordinary dreams come to life.",
+      "tags": ["Mini-Bar", "Television", "Great View"],
+      "diamensions": "8x4=32 Sqmtr",
       "cost": "₹ 2750/night"
-    }
-  ],
-
-  "reviews": [
-    {
-      "id": "1",
-      "name": "Advaith Narayanan",
-      "rating": 3,
-      "comment": "This Place is super spaciouos and the service is great! definitely coming back again"
-    },
-    {
-      "id": "1",
-      "name": "John Doe",
-      "rating": 5,
-      "comment": "Great place to stay!"
-    },
-    {
-      "id": "1",
-      "name": "Skibidi Vijayan",
-      "rating": 5,
-      "comment": "Great place to stay! athe athe"
-    },
-    {
-      "id": "2",
-      "name": "Jane Doe",
-      "rating": 4,
-      "comment": "Beautiful property!"
     }
   ],
   "link": "/thejus"

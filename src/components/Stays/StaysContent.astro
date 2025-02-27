@@ -1,0 +1,35 @@
+---
+import StayCard from "./StayCard.vue"
+import KeyCard from "./KeyCard.vue";
+import data from '../../data/propertydata.json';
+---
+
+<div
+  class="w-full flex flex-col items-center gap-8 lg:px-32 px-4 lg:pb-32 bg-white"
+>
+  <h1 class="lg:text-5xl text-2xl font-bold text-center">STAYS</h1>
+  {data.rooms.map((room, index) => (
+    <>
+    <KeyCard id={index} keycard={room} index={index} class:list={"w-full hidden"} client:load/>
+    </>
+  ))}
+  <div class="w-full"></div>
+    <div class="lg:flex gap-10 w-full">
+
+      {data.rooms.map((room, index) => (
+        <>
+        <StayCard room={room} index={index} class:list={"lg:w-1/3 my-10"} client:load />
+        </>
+      ))}
+      </div>
+
+</div>
+
+
+
+<style>
+  .collapse-content {
+    transition: all 0.3s ease-in-out;
+  }
+</style>
+

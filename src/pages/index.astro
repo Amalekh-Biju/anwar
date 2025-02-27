@@ -3,14 +3,17 @@ import Navbar from '../components/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
 import TejusGallery from '../components/TejusGallery.vue';
 import ThejusContent from '../components/ThejusContent.astro';
-import StaysContent from '../components/StaysContent.astro';
-import Amenites from '../components/Amenites.astro';
+import StaysContent from '../components/Stays/StaysContent.astro';
+import Amenites from '../components/Amenites/Amenites.astro';
 
 import data from '../data/propertydata.json';
 
 import '@fontsource/prata';
 import '@fontsource-variable/raleway';
 import '../styles/global.css';
+import Activites from '../components/Activites/Activites.astro';
+import Review from '../components/Reviews/Review.astro';
+import Contact from '../components/Contact.astro';
 ---
 
 
@@ -27,5 +30,13 @@ import '../styles/global.css';
 	<StaysContent />
 
 	<Amenites />
+
+	<Activites />
+
+	<!-- TODO Gallery -->
+
+	<Review/>
+
+	<Contact/>
 
 </Layout>

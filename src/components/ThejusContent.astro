@@ -1,13 +1,13 @@
 <div
   class="w-full flex flex-col justify-center items-center gap-8 lg:gap-16 lg:px-64 px-4 py-16 lg:py-32 bg-white"
 >
-  <h1 class="lg:text-4xl text-2xl font-bold text-center">About Us</h1>
+  <h1 class="lg:text-5xl text-2xl font-bold text-center">ABOUT US</h1>
 
   <div class="w-full">
 
     <div class="block">
       <!-- Desktop full version -->
-      <p class="text-center text-lg/10 prata px-10">
+      <p class="text-center text-3xl/10 prata px-10">
         In the heart of Kerala, nestled amidst rolling hills and serene fields,
         Nellupura stands as a transuil village where the golden waves of paddy
         sway in the breeze, telling tales of timeless agriculture and rural
@@ -18,21 +18,7 @@
 </div>
 
 <script>
-  const toggleButton = document.getElementById("toggleButton");
-  const shortDesc = document.getElementById("shortDesc");
-  const fullDesc = document.getElementById("fullDesc");
 
-  if (toggleButton && shortDesc && fullDesc) {
-    toggleButton.addEventListener("click", () => {
-      const isExpanded = toggleButton.getAttribute("aria-expanded") === "true";
-
-      toggleButton.setAttribute("aria-expanded", (!isExpanded).toString());
-      toggleButton.textContent = isExpanded ? "Read more" : "Read less";
-
-      shortDesc.classList.toggle("hidden");
-      fullDesc.classList.toggle("hidden");
-    });
-  }
 </script>
 
 <style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden max-w-md mx-auto border-[0.5px] border-gray-400">
+    <div class="overflow-hidden max-w-md mx-auto border-[0.5px] border-gray-400" :id="'card' + index">
         <!-- card flair top -->
         <div class="w-full flex justify-center">
             <svg width="76" height="8" viewBox="0 0 76 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,16 +15,36 @@
         </div>
         <!-- Room Image -->
         <div class="relative w-full flex justify-center
-         p-10">
-            <img :src="room.image" alt="Double Bed Room" class=" h-50 object-cover rounded-xl " />
+         p-10 pb-0">
+            <img :src="room.image" alt="Double Bed Room" class=" h-60 object-cover rounded-xl w-90 " />
         </div>
 
 
-        <div class="flex justify-between items-center px-10">
-            <p class="text-2xl">{{ room.name }}</p>
+        <div class="flex flex-col justify-center items-center w-full">
+            <p :class="{ 'text-3xl py-6': true, 'rudra': room.premium }">{{ room.name }}</p>
+            <div class="h-[0.5px] bg-black opacity-15 w-11/12" />
+
+        </div>
+
+        <!-- Room Details -->
+        <div class="p-6 space-y-4 flex flex-col items-center pb-10">
+
+            <p class="text-gray-700 lg:text-center text-xl prata lg:truncate text-ellipsis w-11/12">
+                {{ room.desc }}
+            </p>
+
+            <button class="font-semibold rudra text-xl lg:block hidden " @click="detail">Read More</button>
+
+            <div class="flex flex-wrap gap-2">
+                <span v-for="tag in room.tags" class="border border-yellow-700 text-black text-[12px] font-semibold px-3 py-2 rounded-full">
+                    {{ tag }}
+                </span>
+
+            </div>
 
             <div class="flex">
-                <svg v-for="_ in room.capacity" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg v-for="_ in room.capacity" width="33" height="32" viewBox="0 0 33 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M26.7616 27.9721V25.33C26.7616 23.9286 26.2049 22.5845 25.2139 21.5935C24.2229 20.6025 22.8788 20.0458 21.4774 20.0458H10.9089C9.50741 20.0458 8.16334 20.6025 7.17235 21.5935C6.18137 22.5845 5.62463 23.9286 5.62463 25.33V27.9721"
                         stroke="black" stroke-width="2.64212" stroke-linecap="round" stroke-linejoin="round" />
@@ -33,19 +53,10 @@
                         stroke="black" stroke-width="2.64212" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </div>
-        </div>
 
-        <!-- Room Details -->
-        <div class="p-6 space-y-4 flex flex-col items-center">
-
-            <p class="text-gray-700 text-center prata">
-                {{ room.desc }}
-                <p v-if="room.breakfast" class="text-xl bg-gradient-to-r from-[#B0905A] from-[3%] to-[#8E5B00] to-[100%] text-transparent bg-clip-text font-medium">Breakfast Included</p>
-            </p>
-            
-            <p class="text-xl font-bold">{{ room.cost }}</p>
+            <p class="text-xl font-semibold ">{{ room.cost }}</p>
             <button
-                class="w-2/4 py-3 px-4 bg-gradient-to-r from-[#B0905A] from-[3%] to-[#8E5B00] to-[100%] text-white font-regular text-xl rounded-lg transition-colors duration-200">
+                class="w-2/4 py-3 px-4 rudrabg text-white font-regular text-xl rounded-lg transition-colors duration-200">
                 Book Now
             </button>
         </div>
@@ -53,13 +64,13 @@
 </template>
 
 <script lang="ts">
-
 interface RoomData {
     name: string;
     image: string;
     capacity: number;
+    premium: boolean;
     desc: string;
-    breakfast: boolean;
+    tags: Array<string>;
     cost: string;
 }
 
@@ -68,20 +79,22 @@ export default {
         room: {
             type: Object as () => RoomData,
             required: true
+        },
+        index: {
+            type: Number,
+            required: true
         }
+    },
+    methods: {
+        detail() {
+            const card = document.getElementById('card'+this.index.toString());
+            const keycard = document.getElementById(this.index.toString());
+            
+            card?.classList.toggle('hidden');
+            keycard?.classList.toggle('hidden');
+        }
+
     }
 }
-
-
-// Template Data
-
-// {
-//       "name": "Room 1",
-//       "image": "/thejus/ThejusRoom1.jpeg",
-//       "capacity": 3,
-//       "desc": "Relax in cozy comfort with a peaceful ambiance for restful sleep.",
-//       "breakfast": true,
-//       "cost": "₹ 3750/night"
-// },
 
 </script>

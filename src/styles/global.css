@@ -5,6 +5,21 @@
     font-family: 'Raleway Variable', serif;
 }
 
+@layer base {
+    button, [role="button"] {
+      cursor: pointer;
+    }
+}
+
 .prata {
     font-family: 'Prata', serif;
+}
+
+.rudra {
+    background: linear-gradient(196.77deg, #B0905A 25.47%, #8E5B00 117.67%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.rudrabg {
+    background: linear-gradient(196.77deg, #B0905A 25.47%, #8E5B00 117.67%);
 }

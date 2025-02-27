@@ -1,0 +1,32 @@
+{
+  "reviews": [
+    {
+      "id": "1",
+      "image": "/thejus/Thejus0.jpeg",
+      "name": "Advaith Narayanan",
+      "rating": 3,
+      "comment": "This Place is super spaciouos and the service is great! definitely coming back again"
+    },
+    {
+      "id": "1",
+      "image": "/thejus/Thejus0.jpeg",
+      "name": "John Doe",
+      "rating": 5,
+      "comment": "Great place to stay!"
+    },
+    {
+      "id": "1",
+      "image": "/thejus/Thejus0.jpeg",
+      "name": "Skibidi Vijayan",
+      "rating": 5,
+      "comment": "Great place to stay! athe athe"
+    },
+    {
+      "id": "2",
+      "image": "/thejus/Thejus0.jpeg",
+      "name": "Jane Doe",
+      "rating": 4,
+      "comment": "Beautiful property!"
+    }
+  ]
+}
