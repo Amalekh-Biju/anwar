@@ -1,7 +1,7 @@
 <template>
-  <div class="gallery-container overflow-clip w-screen ">
+  <div class="gallery-container overflow-clip">
     <!-- Staggered gallery grid with fixed size images -->
-    <div class="staggered-gallery translate-x-[-200px]">
+    <div class="staggered-gallery">
       <div class="gallery-row">
         <div 
           v-for="(image, index) in topRowImages" 
@@ -50,7 +50,8 @@
       <!-- Image container -->
       <div class="flex-grow flex items-center justify-center relative">
         <img 
-          :src="images[currentIndex]" 
+          :src="images[currentIndex].src" 
+          :alt="images[currentIndex].alt || ''" 
           class="max-h-full max-w-full object-contain"
         />
         
