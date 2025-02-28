@@ -56,8 +56,7 @@
             </div>
 
             <p class="text-xl font-semibold ">{{ room.cost }}</p>
-            <a href="https://bookings.rudragroups.org">
-
+            <a :href= room.link class="w-full flex items-center justify-center">
                 <button
                     class="w-2/4 py-3 px-4 rudrabg text-white font-regular text-xl rounded-lg transition-colors duration-200">
                     Book Now
@@ -74,6 +73,7 @@ interface RoomData {
     capacity: number;
     premium: boolean;
     desc: string;
+    link: string;
     tags: Array<string>;
     cost: string;
 }
