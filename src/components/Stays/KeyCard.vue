@@ -63,10 +63,12 @@
                     <p class="text-2xl font-semibold">
                         {{ keycard.cost }}
                     </p>
-                    <button
+                    <a href="https://bookings.rudragroups.org">
+                        <button
                         class="w-80 py-3 px-4 rudrabg grow-0 shrink-0 text-white font-regular text-xl rounded-lg transition-colors duration-200">
                         Book Now
                     </button>
+                </a>
                 </div>
             </div>
         </div>

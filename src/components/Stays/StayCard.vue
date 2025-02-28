@@ -36,7 +36,8 @@
             <button class="font-semibold rudra text-xl lg:block hidden " @click="detail">Read More</button>
 
             <div class="flex flex-wrap gap-2">
-                <span v-for="tag in room.tags" class="border border-yellow-700 text-black text-[12px] font-semibold px-3 py-2 rounded-full">
+                <span v-for="tag in room.tags"
+                    class="border border-yellow-700 text-black text-[12px] font-semibold px-3 py-2 rounded-full">
                     {{ tag }}
                 </span>
 
@@ -55,10 +56,13 @@
             </div>
 
             <p class="text-xl font-semibold ">{{ room.cost }}</p>
-            <button
-                class="w-2/4 py-3 px-4 rudrabg text-white font-regular text-xl rounded-lg transition-colors duration-200">
-                Book Now
-            </button>
+            <a href="https://bookings.rudragroups.org">
+
+                <button
+                    class="w-2/4 py-3 px-4 rudrabg text-white font-regular text-xl rounded-lg transition-colors duration-200">
+                    Book Now
+                </button>
+            </a>
         </div>
     </div>
 </template>
@@ -87,9 +91,9 @@ export default {
     },
     methods: {
         detail() {
-            const card = document.getElementById('card'+this.index.toString());
+            const card = document.getElementById('card' + this.index.toString());
             const keycard = document.getElementById(this.index.toString());
-            
+
             card?.classList.toggle('hidden');
             keycard?.classList.toggle('hidden');
         }
