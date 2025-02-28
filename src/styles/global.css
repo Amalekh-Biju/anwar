@@ -3,6 +3,7 @@
 
 * {
     font-family: 'Raleway Variable', serif;
+    scroll-behavior: smooth;
 }
 
 @layer base {
@@ -23,3 +24,4 @@
 .rudrabg {
     background: linear-gradient(196.77deg, #B0905A 25.47%, #8E5B00 117.67%);
 }
+

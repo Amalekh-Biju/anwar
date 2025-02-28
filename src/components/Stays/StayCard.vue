@@ -21,7 +21,7 @@
 
 
         <div class="flex flex-col justify-center items-center w-full">
-            <p :class="{ 'text-3xl py-6': true, 'rudra': room.premium }">{{ room.name }}</p>
+            <p :class="{ 'text-2xl lg:text-3xl py-6': true, 'rudra': room.premium }">{{ room.name }}</p>
             <div class="h-[0.5px] bg-black opacity-15 w-11/12" />
 
         </div>
@@ -29,7 +29,7 @@
         <!-- Room Details -->
         <div class="p-6 space-y-4 flex flex-col items-center pb-10">
 
-            <p class="text-gray-700 lg:text-center text-xl prata lg:truncate text-ellipsis w-11/12">
+            <p class="text-gray-700 lg:text-center text-sm lg:text-xl prata lg:truncate text-ellipsis w-11/12">
                 {{ room.desc }}
             </p>
 

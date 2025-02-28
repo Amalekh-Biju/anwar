@@ -1,5 +1,5 @@
 ---
-import Navbar from '../components/Navbar.astro';
+import Navbar from '../components/Navbar.vue';
 import Layout from '../layouts/Layout.astro';
 import TejusGallery from '../components/TejusGallery.vue';
 import ThejusContent from '../components/ThejusContent.astro';
@@ -14,29 +14,36 @@ import '../styles/global.css';
 import Activites from '../components/Activites/Activites.astro';
 import Review from '../components/Reviews/Review.astro';
 import Contact from '../components/Contact.astro';
+import Rudra from '../components/Rudra.astro';
 ---
 
 
 
 <Layout>
-	<Navbar />
+	<Navbar client:load/>
 	<TejusGallery 
 	client:load
     images={data.image}
     card={data}/>
 
+	<div id="about" />
 	<ThejusContent />
-
+	
+	<div id="stay" />
 	<StaysContent />
 
+	<div id="exp" />
 	<Amenites />
-
+	
 	<Activites />
-
+	
 	<!-- TODO Gallery -->
-
+	
 	<Review/>
-
+	
+	<div id="contact" />
 	<Contact/>
+
+	<Rudra/>
 
 </Layout>
