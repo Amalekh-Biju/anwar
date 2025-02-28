@@ -16,6 +16,10 @@
     font-family: 'Prata', serif;
 }
 
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
 .rudra {
     background: linear-gradient(196.77deg, #B0905A 25.47%, #8E5B00 117.67%);
     background-clip: text;

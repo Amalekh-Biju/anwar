@@ -10,11 +10,14 @@ import data from '../data/propertydata.json';
 
 import '@fontsource/prata';
 import '@fontsource-variable/raleway';
+import '@fontsource/poppins';
 import '../styles/global.css';
 import Activites from '../components/Activites/Activites.astro';
 import Review from '../components/Reviews/Review.astro';
 import Contact from '../components/Contact.astro';
 import Rudra from '../components/Rudra.astro';
+import Footer from '../components/Footer.astro';
+import Gallery from '../components/Gallery/Gallery.astro';
 ---
 
 
@@ -37,7 +40,7 @@ import Rudra from '../components/Rudra.astro';
 	
 	<Activites />
 	
-	<!-- TODO Gallery -->
+	<Gallery />
 	
 	<Review/>
 	
@@ -45,5 +48,7 @@ import Rudra from '../components/Rudra.astro';
 	<Contact/>
 
 	<Rudra/>
+
+	<Footer />
 
 </Layout>

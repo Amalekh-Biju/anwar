@@ -1,0 +1,14 @@
+---
+import data from '../../data/propertydata.json'
+import GalleryGallery from './GalleryGallery.vue'
+---
+
+<div
+  class="w-full flex flex-col justify-center items-center gap-8 lg:gap-16 lg:px-16 px-4 py-16 lg:pb-32 bg-white"
+>
+  <h1 class="lg:text-6xl text-2xl font-bold text-center">GALLERY</h1>
+
+  <div class="w-full lg:flex-row flex-col flex justify-around items-center gap-8 lg:gap-16">
+    <GalleryGallery images={data.image}/>
+  </div> 
+</div>

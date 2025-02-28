@@ -7,23 +7,24 @@ import data from "../data/propertyies.json";
 >
   <h1 class="lg:text-6xl text-2xl font-bold text-center">RUDRA PROPERTIES</h1>
 
-  <p class="prata text-xl text-center">
+  <p class="prata text-2xl text-center">
     Your gateway to unique, privately-owned properties designed for comfort,
     style, and unforgettable experiences.
   </p>
-  
-  
-  <div class="flex gap-5 flex-col">
+
+  <div class="flex gap-5 flex-col lg:flex-row">
     {
       data.map((property) => (
-        <div class="flex flex-col gap-8 lg:gap-16 items-center justify-center">
-          <img
-            src={property.image}
-            alt={property.title}
-            class="rounded-lg w-64 h-50"
+        <a href={property.link}>
+          <div class="flex flex-col gap-8 lg:gap-8 items-center justify-center">
+            <img
+              src={property.image}
+              alt={property.title}
+              class="rounded-lg w-90 h-60 object-cover"
             />
-          <h2 class="text-2xl">{property.title}</h2>
-        </div>
+            <h2 class="text-2xl font-bold">{property.title}</h2>
+          </div>
+        </a>
       ))
     }
   </div>

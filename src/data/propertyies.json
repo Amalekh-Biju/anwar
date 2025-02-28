@@ -3,24 +3,24 @@
     "ready": true,
     "title": "Tejus Homes",
     "image": "/thejus/Thejus0.jpeg",
-    "link": "/thejus"
+    "link": "/"
   },
   {
     "ready": true,
     "title": "Anwar Arena",
     "image": "/anwar/Anwar0.jpeg",
-    "link": "/properties/courthall"
+    "link": "https://rudragroups.org/properties/courthall"
   },
   {
     "ready": true,
     "title": "Nirmala Mansion",
     "image": "/nirmala/Nirmala0.jpeg",
-    "link": "/properties/mansion"
+    "link": "https://rudragroups.org/properties/mansion"
   },
   {
     "ready": false,
     "title": "House On Wheels",
     "image": "/hosueonwheels.png",
-    "link": "/properties/apartment"
+    "link": "https://rudragroups.org/properties/apartment"
   }
 ]
