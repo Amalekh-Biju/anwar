@@ -4,29 +4,30 @@
       "id": "1",
       "image": "/thejus/Thejus0.jpeg",
       "name": "Advaith Narayanan",
-      "rating": 3,
+      "rating": 4,
       "comment": "This Place is super spaciouos and the service is great! definitely coming back again"
     },
     {
       "id": "1",
       "image": "/thejus/Thejus0.jpeg",
-      "name": "John Doe",
+      "name": "Rahul Krishnan",
       "rating": 5,
-      "comment": "Great place to stay!"
+      "comment": "Peaceful ambiance and homely atmosphere. The Kerala breakfast was amazing!"
+  
     },
     {
       "id": "1",
       "image": "/thejus/Thejus0.jpeg",
-      "name": "Skibidi Vijayan",
+      "name": "Govind Menon",
       "rating": 5,
-      "comment": "Great place to stay! athe athe"
+      "comment": "Exceptional hospitality and a serene environment. The rooms are spacious and well-maintained!"
     },
     {
       "id": "2",
       "image": "/thejus/Thejus0.jpeg",
-      "name": "Jane Doe",
+      "name": "Sarah Johnson",
       "rating": 4,
-      "comment": "Beautiful property!"
+      "comment": "Beautiful property with excellent amenities and warm staff. A perfect getaway spot!"
     }
   ]
 }
