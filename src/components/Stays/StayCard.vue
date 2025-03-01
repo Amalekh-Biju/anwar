@@ -29,14 +29,12 @@
         <!-- Room Details -->
         <div class="p-6 space-y-4 flex flex-col items-center pb-10">
 
-            <p class="text-gray-700 lg:text-center text-sm lg:text-xl prata lg:truncate text-ellipsis w-11/12">
+            <p class="text-gray-700 lg:text-center text-sm lg:text-xl prata truncate text-ellipsis w-11/12">
                 {{ room.desc }}
             </p>
 
-            <button class="font-semibold rudra text-xl lg:block hidden " @click="detail">Read More</button>
-
             <div class="flex flex-wrap gap-2">
-                <span v-for="tag in room.tags"
+                <span v-for="(tag, index) in room.tags.slice(0, 3)"
                     class="border border-yellow-700 text-black text-[12px] font-semibold px-3 py-2 rounded-full">
                     {{ tag }}
                 </span>
@@ -56,12 +54,13 @@
             </div>
 
             <p class="text-xl font-semibold ">{{ room.cost }}</p>
-            <a :href= room.link class="w-full flex items-center justify-center">
-                <button
-                    class="w-2/4 py-3 px-4 rudrabg text-white font-regular text-xl rounded-lg transition-colors duration-200">
-                    Book Now
-                </button>
-            </a>
+            <a :href="'#'+index" class="w-full flex items-center justify-center">   
+                <button @click="detail"
+                class="w-2/4 py-3 px-4 rudrabg text-white font-regular text-xl rounded-lg transition-colors duration-200">
+                Read More
+            </button>
+        </a>
+            
         </div>
     </div>
 </template>

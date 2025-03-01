@@ -27,7 +27,7 @@
       "premium": false,
       "capacity": 2,
       "desc": "Step into a world where comfort meets sophistication, where every detail is crafted for your ultimate relaxation. Our DOUBLE DELUXE Room is more than just a place to stay; it’s an experience. Designed with a perfect blend of modern luxury and timeless charm, this room invites you to unwind in style.",
-      "tags": ["Breakfast", "Restrooms", "First Aid Kits", "Parking"],
+      "tags": ["Breakfast", "Restrooms", "First Aid Kits", "Parking", "Hot water", "Mineral water", "WiFi", "Wardrobe", "Tea/Coffee"],
       "diamensions": "8x4=32 Sqmtr",
       "cost": "₹ 2750/night",
       "link": "https://bookings.rudragroups.org/cozy-rooms/?roomid=1"
@@ -39,7 +39,7 @@
       "premium": false,
       "capacity": 2,
       "desc": "Step into a world where comfort meets sophistication, where every detail is crafted for your ultimate relaxation. Our DOUBLE DELUXE Room is more than just a place to stay; it’s an experience. Designed with a perfect blend of modern luxury and timeless charm, this room invites you to unwind in style.",
-      "tags": ["Breakfast", "Restrooms", "First Aid Kits", "Parking"],
+      "tags": ["Breakfast", "Restrooms", "First Aid Kits", "Parking", "Hot water", "Mineral water", "WiFi", "Wardrobe", "Tea/Coffee", "Television"],
       "diamensions": "8x4=32 Sqmtr",
       "cost": "₹ 3000/night",
       "link": "https://bookings.rudragroups.org/cozy-rooms/"
@@ -50,7 +50,7 @@
       "premium": true,
       "capacity": 3,
       "desc": "Step beyond the ordinary and enter a realm of grandeur with our ROYAL SUITE, where every corner whispers elegance, and every detail exudes luxury. This is not just a room – it is a sanctuary fit for royalty, a space where lavishness meets tranquillity and where your most extraordinary dreams come to life.",
-      "tags": ["Mini-Bar", "Television", "Great View"],
+      "tags": ["Mini-Bar", "Television", "Great View", "Hot water", "Mineral water", "WiFi", "Wardrobe", "Tea/Coffee"],
       "diamensions": "8x4=32 Sqmtr",
       "cost": "₹ 3750/night",
       "link": "https://bookings.rudragroups.org/cozy-rooms/?roomid=4"

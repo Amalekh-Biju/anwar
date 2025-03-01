@@ -26,15 +26,15 @@
             </button>
         </div>
 
-        <div class=" flex justify-between items-center p-6 gap-6">
+        <div class=" flex flex-col lg:flex-row justify-between items-center p-6 lg:gap-6">
             <!-- Key Image -->
-            <img :src="keycard.image" alt="Access Key" class="h-130 object-cover rounded-xl w-170 m-10" />
+            <img :src="keycard.image" alt="Access Key" class="h-130 object-cover rounded-xl w-170 lg:m-10" />
             <div class="flex flex-col items-start justify-between w-full gap-6">
                 <div class="flex justify-between items-center w-full">
                     <h1 class="text-3xl py-6" :class="{ 'rudra': keycard.premium }">
                         {{ keycard.name }}
                     </h1>
-                    <div class="flex gap-2 pr-15">
+                    <div class="flex gap-2 lg:pr-15 lg:w-auto w-full justify-end">
                         <svg v-for="_ in keycard.capacity" width="33" height="32" viewBox="0 0 33 32" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -46,26 +46,26 @@
                         </svg>
                     </div>
                 </div>
-                <div class="flex flex-wrap gap-2">
+                <div class="flex flex-wrap gap-2 w-full">
                     <span v-for="tag in keycard.tags"
                         class="border border-yellow-700 text-black text-[12px] font-semibold px-3 py-2 rounded-full">
                         {{ tag }}
                     </span>
                 </div>
-                <div class="h-[0.5px] bg-black opacity-15 w-11/12" />
+                <div class="h-[0.5px] bg-black opacity-15 lg:w-11/12 w-full" />
                 <div>
-                    <p class="text-gray-700 text-xl/10 prata text-ellipsis w-11/12">
+                    <p class="text-gray-700 lg:text-xl/10 prata text-ellipsis w-11/12">
                         {{ keycard.desc }}
                     </p>
-                    <p class="text-xl font-semibold text-gray-400">Diamentions: {{ keycard.diamensions }}</p>
+                    <p class="text-xl font-semibold text-gray-400 pt-10">Diamentions: {{ keycard.diamensions }}</p>
                 </div>
-                <div class="w-full flex justify-around">
+                <div class="w-full flex items-center justify-around">
                     <p class="text-2xl font-semibold">
                         {{ keycard.cost }}
                     </p>
-                    <a href="https://bookings.rudragroups.org">
+                    <a :href="keycard.link">
                         <button
-                        class="w-80 py-3 px-4 rudrabg grow-0 shrink-0 text-white font-regular text-xl rounded-lg transition-colors duration-200">
+                        class="lg:w-80 py-3 px-4 rudrabg grow-0 shrink-0 text-white font-regular text-xl rounded-lg transition-colors duration-200">
                         Book Now
                     </button>
                 </a>
@@ -85,6 +85,7 @@ interface KeyCardData {
     diamensions: string;
     tags: Array<string>;
     cost: string;
+    link: string;
 }
 
 export default {

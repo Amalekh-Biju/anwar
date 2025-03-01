@@ -8,11 +8,13 @@ import ReviewCard from './ReviewCard.vue'
 >
   <h1 class="lg:text-6xl text-2xl font-bold text-center">REVIEWS</h1>
 
-  <div class="w-full lg:flex-row flex-col flex justify-around items-center gap-8 lg:gap-16">
-    {data.reviews.map((review) => (
-      <ReviewCard
-        review={review}
-      />
-    ))}
-  </div> 
+  <div class="w-full overflow-x-auto pb-4 hide-scrollbar">
+    <div class="w-full flex lg:flex-row flex-row justify-around items-center gap-8 lg:gap-16 min-w-max px-4">
+      {data.reviews.map((review) => (
+        <ReviewCard
+          review={review}
+        />
+      ))}
+    </div>
+  </div>
 </div>
