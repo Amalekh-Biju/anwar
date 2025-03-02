@@ -28,6 +28,7 @@ export default {
                 ["/activites/backwater.jpg","Backwater tours"],
                 ["/activites/naturetrail.jpg","⁠Nature Trail walk"],
                 ["/activites/cycling.jpg","Cycling"],
+                ["/activites/spa.jpg","Ayurvedic Spa"],
                 ["/activites/bike.webp","Bike rentals"]
             ],
         };
