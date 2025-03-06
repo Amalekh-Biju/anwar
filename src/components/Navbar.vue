@@ -83,7 +83,7 @@
 
   <button 
     @click="scrollToTop" 
-    class="fixed bottom-8 right-8  p-3 rounded-full shadow-lg z-20 transition-opacity duration-300 flex items-center gap-2"
+    class="fixed bottom-8 right-8  p-3 rounded-full shadow-lg z-20 transition-opacity duration-300 flex items-center gap-2 bg-white"
     :class="{ 'opacity-0': !showScrollButton, 'opacity-100': showScrollButton }"
     aria-label="Scroll to top">
     Scroll To Top

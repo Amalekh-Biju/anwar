@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full overflow-hidden relative">
+    <div class="w-full overflow-hidden relative ">
         
 
         <div class="w-full lg:h-[600px] h-[250px]  block relative">
@@ -21,7 +21,7 @@
 
           <div class="w-screen justify-center">
             <div 
-                class="absolute bottom-10 right-0  py-3 pr-8 lg:pr-10 mt-10 rounded-l-xl text-sm lg:text-xl flex items-center">
+                class="absolute bottom-10 right-0 bg-white py-3 pr-8 lg:pr-10 mt-10 rounded-l-xl text-sm lg:text-xl flex items-center">
                 <div class="gap-8 lg:gap-20 flex justify-center items-center ml-5">
                     <a href="tel:+919778238199" class="flex items-center gap-2">
                         <p>Call</p>
@@ -36,7 +36,7 @@
         </div>
 
         <!-- Left Arrow -->
-        <button class="absolute left-5 top-1/2 transform -translate-y-1/2  bg-opacity-50 p-2 ml-3 rounded-full"
+        <button class="absolute left-5 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 ml-3 rounded-full"
             @click="prevImage">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -46,7 +46,7 @@
         </button>
 
         <!-- Right Arrow -->
-        <button class="absolute right-5 top-1/2  opatransform -translate-y-1/2  bg-opacity-50 p-2 mr-3 rounded-full"
+        <button class="absolute right-5 top-1/2  opatransform -translate-y-1/2 bg-white bg-opacity-50 p-2 mr-3 rounded-full"
             @click="nextImage">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

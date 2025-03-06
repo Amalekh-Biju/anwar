@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 items-center justify-center py-10 [&>p]:flex [&>p]:items-center [&>p]:justify-center [&>p]:gap-2 [&>p]:flex-col [&>p]:text-gray-500 [&>p]:text-center [&>p]:w-40 [&>p]:h-40 [&>p]:text-wrap [&>p]:mx-auto" >
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 items-center justify-center py-10 [&>p]:flex [&>p]:items-center [&>p]:justify-center [&>p]:gap-2 [&>p]:flex-col [&>p]:text-gray-500 [&>p]:text-center [&>p]:w-40 [&>p]:h-40 [&>p]:text-wrap [&>p]:m-auto [&>p]:bg-white [&>p]:rounded-xl [&>p]:p-2" >
         <p>
             <img src="/amenites/Wifi.svg" alt="WiFi" >
             Free Wi-Fi
