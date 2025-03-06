@@ -36,8 +36,22 @@
         <meta name="revisit-after" content="7 days" />
         <meta name="geo.region" content="IN-KL" />
         <meta name="geo.placename" content="Kerala" />
+        
+        <style>
+            body {
+                background-image: url('/bg.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+            .content-wrapper {
+                background-color: rgba(237, 237, 237, 0.9); /* Semi-transparent version of your #EDEDED color */
+            }
+        </style>
     </head>
-    <body class="bg-[#EDEDED]">
-        <slot />
+    <body>
+        <div class="content-wrapper min-h-screen">
+            <slot />
+        </div>
     </body>
 </html>

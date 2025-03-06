@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden border-[0.5px]  border-gray-400" id="keycard">
+    <div class="overflow-hidden border-[0.5px] bg-white border-gray-400" id="keycard">
         <!-- card flair top -->
 
         <div class="w-full flex justify-center">

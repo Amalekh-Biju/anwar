@@ -4,7 +4,7 @@
   
   <div id="bar">
       <div id="black" class="absolute w-full bg-black h-full right-0 top-0 z-10 opacity-50 hidden" />
-      <div id="nav" class="absolute left-0 top-0 h-full w-4/5 bg-white z-10 p-0 hidden">
+      <div id="nav" class="absolute left-0 top-0 h-full w-4/5  z-10 p-0 hidden">
 
         <div class="w-full h-20 flex flex-col justify-center pl-10">
 
@@ -83,7 +83,7 @@
 
   <button 
     @click="scrollToTop" 
-    class="fixed bottom-8 right-8 bg-white p-3 rounded-full shadow-lg z-20 transition-opacity duration-300 flex items-center gap-2"
+    class="fixed bottom-8 right-8  p-3 rounded-full shadow-lg z-20 transition-opacity duration-300 flex items-center gap-2"
     :class="{ 'opacity-0': !showScrollButton, 'opacity-100': showScrollButton }"
     aria-label="Scroll to top">
     Scroll To Top

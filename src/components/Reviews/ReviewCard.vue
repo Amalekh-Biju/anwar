@@ -1,5 +1,5 @@
 <template>
-    <div class=" flex flex-col gap-3 border-[1px] border-black p-4 lg:w-80 lg:h-80 w-60 h-60">
+    <div class=" flex flex-col gap-3 border-[1px] border-black p-4 lg:w-80 lg:h-80 w-60 h-60 bg-white">
         <div class="flex items-center gap-5">
             <img :src=review.image class="h-10 w-10 rounded-full hidden lg:block" alt="">
             <div>

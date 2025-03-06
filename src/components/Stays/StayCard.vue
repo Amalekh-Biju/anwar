@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden max-w-md mx-auto border-[0.5px] border-gray-400" :id="'card' + index">
+    <div class="overflow-hidden max-w-md mx-auto border-[0.5px] border-gray-400 bg-white" :id="'card' + index">
         <!-- card flair top -->
         <div class="w-full flex justify-center">
             <svg width="76" height="8" viewBox="0 0 76 8" fill="none" xmlns="http://www.w3.org/2000/svg">
