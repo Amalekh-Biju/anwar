@@ -27,7 +27,7 @@
                         <p>Call</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="lg:w-6 lg:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                     </a>
-                    <a href="https://www.google.com/maps/place/MCFJ%2BJC7+Thejas+Homes,+Unnamed+Road,+Kerala+686144/data=!4m2!3m1!1s0x3b087fdd4592bccf:0xfd4f35310164b74b?entry=gps&coh=192189&g_ep=CAESBjI1LjYuMhgAINeCAypsLDk0MjQyNTgzLDk0MjIzMjk5LDk0MjE2NDEzLDk0MjEyNDk2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE3NTIzLDk0MjE4NjUzLDk0MjI5ODM5LDQ3MDg0MzkzLDk0MjEzMjAwQgJJTg%3D%3D" class="flex items-center gap-2">
+                    <a href="https://maps.app.goo.gl/9Tqf8iMFc9oprFQX6" class="flex items-center gap-2">
                         <p>Map</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="lg:w-6 lg:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
                     </a>
