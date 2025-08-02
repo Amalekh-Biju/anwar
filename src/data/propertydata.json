@@ -32,7 +32,7 @@
       "tags": ["Breakfast", "Restrooms", "WiFi", "Parking", "Hot water", "Mineral water", "First Aid Kits", "Wardrobe", "Tea/Coffee"],
       "diamensions": "8x4=32 Sqmtr",
       "cost": "₹ 2750/night",
-      "link": "https://bookings.rudragroups.org/cozy-rooms/?roomid=1"
+      "link": "https://bookings.rudragroups.org/rooms/1"
     },
     {
       "name": "Room Chembavu",
@@ -44,7 +44,7 @@
       "tags": ["Breakfast", "Restrooms","WiFi", "First Aid Kits", "Parking", "Hot water", "Mineral water",  "Wardrobe", "Tea/Coffee", "Television"],
       "diamensions": "8x4=32 Sqmtr",
       "cost": "₹ 3000/night",
-      "link": "https://bookings.rudragroups.org/cozy-rooms/"
+      "link": "https://bookings.rudragroups.org/rooms/2"
     },
     {
       "name": "Room Njavara - Royal Suite",
@@ -55,7 +55,7 @@
       "tags": ["Mini-Bar", "Television", "Great View", "Hot water", "Mineral water", "WiFi", "Wardrobe", "Tea/Coffee"],
       "diamensions": "8x4=32 Sqmtr",
       "cost": "₹ 3750/night",
-      "link": "https://bookings.rudragroups.org/cozy-rooms/?roomid=4"
+      "link": "https://bookings.rudragroups.org/rooms/3"
     }
   ],
   "link": "/thejus"
