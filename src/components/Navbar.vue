@@ -9,7 +9,7 @@
         <div class="w-full h-20 flex flex-col justify-center pl-10">
 
           <a href="/" class="">
-            <h1 class="font-bold text-xl lg:text-3xl text-left">NELLUPURA BY TEJUS</h1>
+            <h1 class="font-bold text-xl lg:text-3xl text-left">ANWAR SPORTS ARENA</h1>
           </a>
 
 
@@ -17,7 +17,7 @@
         <div class="w-full h-[2px] bg-gray-300" />
 
         <nav class="flex flex-col p-10 gap-10 [&>*>*]:flex [&>*>*]:gap-5 [&>*>*]:justify-between [&>*>*]:font-semibold">
-            <button @click="closenav"><a href="#exp"> Experiences <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <button @click="closenav"><a href="#exp"> Services <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" class="lucide lucide-arrow-right">
               <path d="M5 12h14" />
@@ -29,7 +29,7 @@
               <path d="M5 12h14" />
               <path d="m12 5 7 7-7 7" />
               </svg> </a> </button>
-            <button @click="closenav"><a href="#stay"> Stays <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <button @click="closenav"><a href="#stay"> Event Hall <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" class="lucide lucide-arrow-right">
               <path d="M5 12h14" />
@@ -54,7 +54,7 @@
   <div class="flex items-center justify-between px-8 py-12 w-screen bg-white ">
 
     <a href="/">
-      <h1 class="font-bold text-xl lg:text-3xl text-right">NELLUPURA BY TEJUS</h1>
+      <h1 class="font-bold text-xl lg:text-3xl text-right">ANWAR SPORTS ARENA</h1>
     </a>
 
     <button id="hamburger" class="p-2 rounded-full lg:hidden">
@@ -70,9 +70,9 @@
 
 
     <div class="[&>a]:font-medium [&>a]:text-2xl lg:flex hidden gap-10 ">
-      <a href="#exp">Experiences</a>
+      <a href="#exp">Services</a>
       <a href="#gallery">Gallery</a>
-      <a href="#stay">Stays</a>
+      <a href="#stay">Event Hall</a>
       <a href="#about">About Us</a>
       <a href="#contact">Contact</a>
     </div>

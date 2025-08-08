@@ -2,32 +2,31 @@
   "reviews": [
     {
       "id": "1",
-      "image": "/thejus/Thejus0.jpeg",
+      "image": "/anwar/Anwar0.jpeg",
       "name": "Advaith Narayanan",
-      "rating": 4,
-      "comment": "This Place is super spaciouos and the service is great! definitely coming back again"
-    },
-    {
-      "id": "1",
-      "image": "/thejus/Thejus0.jpeg",
-      "name": "Rahul Krishnan",
       "rating": 5,
-      "comment": "Peaceful ambiance and homely atmosphere. The Kerala breakfast was amazing!"
-  
-    },
-    {
-      "id": "1",
-      "image": "/thejus/Thejus0.jpeg",
-      "name": "Govind Menon",
-      "rating": 5,
-      "comment": "Exceptional hospitality and a serene environment. The rooms are spacious and well-maintained!"
+      "comment": "Perfect venue for our company event! The hall is spacious and the lighting was excellent for photography."
     },
     {
       "id": "2",
-      "image": "/thejus/Thejus0.jpeg",
+      "image": "/anwar/Anwar1.jpeg",
+      "name": "Rahul Krishnan",
+      "rating": 5,
+      "comment": "Had our wedding reception here and it was magical! Great sound system and professional staff."
+    },
+    {
+      "id": "3",
+      "image": "/anwar/Anwar0.jpeg",
+      "name": "Priya Menon",
+      "rating": 5,
+      "comment": "Exceptional service for our anniversary celebration. The venue setup was perfect and very professional!"
+    },
+    {
+      "id": "4",
+      "image": "/anwar/Anwar1.jpeg",
       "name": "Sarah Johnson",
       "rating": 4,
-      "comment": "Beautiful property with excellent amenities and warm staff. A perfect getaway spot!"
+      "comment": "Beautiful venue with excellent facilities and helpful staff. Perfect for special events!"
     }
   ]
 }

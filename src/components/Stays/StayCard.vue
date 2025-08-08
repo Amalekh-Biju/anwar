@@ -7,8 +7,8 @@
                 <defs>
                     <linearGradient id="paint0_linear_1122_4658" x1="49.0186" y1="1.99857" x2="48.7752" y2="10.6517"
                         gradientUnits="userSpaceOnUse">
-                        <stop offset="0.0300935" stop-color="#B0905A" />
-                        <stop offset="1" stop-color="#8E5B00" />
+                        <stop offset="0.0300935" stop-color="#1E40AF" />
+                        <stop offset="1" stop-color="#059669" />
                     </linearGradient>
                 </defs>
             </svg>
@@ -21,7 +21,7 @@
 
 
         <div class="flex flex-col justify-center items-center w-full">
-            <p :class="{ 'text-2xl lg:text-3xl py-6': true, 'rudra': room.premium }">{{ room.name }}</p>
+            <p :class="{ 'text-2xl lg:text-3xl py-6': true, 'anwar': room.premium }">{{ room.name }}</p>
             <div class="h-[0.5px] bg-black opacity-15 w-11/12" />
 
         </div>
@@ -35,28 +35,16 @@
 
             <div class="flex flex-wrap gap-2">
                 <span v-for="(tag, index) in room.tags.slice(0, 3)"
-                    class="border border-yellow-700 text-black text-[12px] font-semibold px-3 py-2 rounded-full">
+                    class="border border-blue-600 text-black text-[12px] font-semibold px-3 py-2 rounded-full">
                     {{ tag }}
                 </span>
 
             </div>
 
-            <div class="flex">
-                <svg v-for="_ in room.capacity" width="33" height="32" viewBox="0 0 33 32" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M26.7616 27.9721V25.33C26.7616 23.9286 26.2049 22.5845 25.2139 21.5935C24.2229 20.6025 22.8788 20.0458 21.4774 20.0458H10.9089C9.50741 20.0458 8.16334 20.6025 7.17235 21.5935C6.18137 22.5845 5.62463 23.9286 5.62463 25.33V27.9721"
-                        stroke="black" stroke-width="2.64212" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M16.1932 14.76C19.1116 14.76 21.4774 12.3942 21.4774 9.47578C21.4774 6.55737 19.1116 4.19153 16.1932 4.19153C13.2748 4.19153 10.9089 6.55737 10.9089 9.47578C10.9089 12.3942 13.2748 14.76 16.1932 14.76Z"
-                        stroke="black" stroke-width="2.64212" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </div>
-
             <p class="text-xl font-semibold ">{{ room.cost }}</p>
             <a :href="'#'+index" class="w-full flex items-center justify-center">   
                 <button @click="detail"
-                class="w-2/4 py-3 px-4 rudrabg text-white font-regular text-xl rounded-lg transition-colors duration-200">
+                class="w-2/4 py-3 px-4 anwarbg text-white font-regular text-xl rounded-lg transition-colors duration-200">
                 Read More
             </button>
         </a>

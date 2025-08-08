@@ -1,62 +1,37 @@
 {
-  "title": "Thejus Homes",
+  "title": "Anwar Sports Arena",
   "image": [
-    "/thejus/Thejus0.jpeg",
-    "/thejus/Thejus1.jpeg",
-    "/thejus/Thejus2.jpeg",
-    "/thejus/Thejus3.jpeg",
-    "/thejus/Thejus4.jpeg",
-    "/thejus/Thejus5.jpeg",
-    "/thejus/Thejus6.jpeg",
-    "/thejus/Thejus7.jpeg",
-    "/thejus/Thejus8.webp"
+    "/anwar/Anwar0.jpeg",
+    "/anwar/Anwar1.jpeg"
   ],
-  "description": "Court Doubles as a Banquet Hall",
-  "longDescription": "A charming, private retreat with open, airy interiors and lush, landscaped surroundings. This villa combines modern comforts with a relaxed ambiance, providing a serene escape with a touch of luxury.",
+  "description": "Premium Event Venue • 4.2 ⭐ (116 reviews)",
+  "longDescription": "A versatile and elegant event venue perfect for weddings, parties, corporate events, and celebrations. Our spacious arena features excellent lighting, climate control, and modern amenities. From intimate gatherings to grand celebrations, we provide the perfect backdrop for your special moments.",
   "tags": [
-    "Locker Rooms",
-    "Restrooms",
-    "First Aid Kits ",
-    "Parking",
-    "Equipment",
-    "Spectator Area"
+    "Wedding Venue",
+    "Party Hall", 
+    "Corporate Events",
+    "Catering Services",
+    "Professional Lighting",
+    "Sound System",
+    "Climate Control",
+    "Parking Available"
   ],
-
-  "rooms": [
+  "courts": [
     {
-      "name": "Room Chennellu",
-      "image": "/thejus/Thejus1.jpeg",
-      "premium": false,
-      "capacity": 2,
-      "desc": "Step into a world where comfort meets sophistication, where every detail is crafted for your ultimate relaxation. Our DOUBLE DELUXE Room is more than just a place to stay; it’s an experience. Designed with a perfect blend of modern luxury and timeless charm, this room invites you to unwind in style.",
-      "tags": ["Breakfast", "Restrooms", "WiFi", "Parking", "Hot water", "Mineral water", "First Aid Kits", "Wardrobe", "Tea/Coffee"],
-      "diamensions": "8x4=32 Sqmtr",
-      "cost": "₹ 2750/night",
-      "link": "https://bookings.rudragroups.org/rooms/1"
-    },
-    {
-      "name": "Room Chembavu",
-      "image": "/thejus/Thejus3.jpeg",
-  
-      "premium": false,
-      "capacity": 2,
-      "desc": "Step through the door, and you’re not just entering a suite; you’re crossing into a realm of refined opulence—a world designed not merely to impress, but to transport you. THE DELUXE SUITE is a sanctuary where every surface, every shadow, every glimmer of light speaks to a story of indulgence, comfort, and timeless luxury.",
-      "tags": ["Breakfast", "Restrooms","WiFi", "First Aid Kits", "Parking", "Hot water", "Mineral water",  "Wardrobe", "Tea/Coffee", "Television"],
-      "diamensions": "8x4=32 Sqmtr",
-      "cost": "₹ 3000/night",
-      "link": "https://bookings.rudragroups.org/rooms/2"
-    },
-    {
-      "name": "Room Njavara - Royal Suite",
-      "image": "/thejus/Thejus2.jpeg",
+      "name": "Grand Event Hall",
+      "image": "/anwar/Anwar0.jpeg",
       "premium": true,
-      "capacity": 3,
-      "desc": "Step beyond the ordinary and enter a realm of grandeur with our ROYAL SUITE, where every corner whispers elegance, and every detail exudes luxury. This is not just a room – it is a sanctuary fit for royalty, a space where lavishness meets tranquillity and where your most extraordinary dreams come to life.",
-      "tags": ["Mini-Bar", "Television", "Great View", "Hot water", "Mineral water", "WiFi", "Wardrobe", "Tea/Coffee"],
-      "diamensions": "8x4=32 Sqmtr",
-      "cost": "₹ 3750/night",
-      "link": "https://bookings.rudragroups.org/rooms/3"
+      "capacity": 200,
+      "desc": "Our stunning event hall is perfect for weddings, receptions, birthday parties, corporate events, and celebrations. Features professional lighting, sound system, climate control, and spacious layout for memorable occasions.",
+      "tags": ["Professional Lighting", "Sound System", "Climate Control", "Catering Facility", "Decorations", "Parking"],
+      "dimensions": "Large spacious hall",
+      "cost": "Contact for Pricing",
+      "eventTypes": {
+        "weddings": "Perfect for wedding ceremonies and receptions",
+        "parties": "Birthday parties, anniversaries, celebrations",
+        "corporate": "Corporate events, meetings, conferences"
+      }
     }
   ],
-  "link": "/thejus"
+  "link": "/anwar"
 }

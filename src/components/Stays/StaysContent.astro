@@ -7,18 +7,18 @@ import data from '../../data/propertydata.json';
 <div
   class="w-full flex flex-col items-center gap-8 lg:px-32 px-4 lg:pb-32 "
 >
-  <h1 class="lg:text-5xl text-2xl font-bold text-center">STAYS</h1>
-  {data.rooms.map((room, index) => (
+  <h1 class="lg:text-5xl text-2xl font-bold text-center">EVENT HALL</h1>
+  {data.courts.map((court, index) => (
     <>
-    <KeyCard id={index} keycard={room} index={index} class:list={"w-full hidden"} client:load/>
+    <KeyCard id={index} keycard={court} index={index} class:list={"w-full hidden"} client:load/>
     </>
   ))}
   <div class="w-full"></div>
     <div class="lg:flex gap-10 w-full">
 
-      {data.rooms.map((room, index) => (
+      {data.courts.map((court, index) => (
         <>
-        <StayCard room={room} index={index} class:list={"lg:w-1/3 my-10"} client:load />
+        <StayCard room={court} index={index} class:list={"lg:w-1/3 my-10"} client:load />
         </>
       ))}
       </div>

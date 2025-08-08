@@ -1,7 +1,7 @@
 ---
 import Navbar from '../components/Navbar.vue';
 import Layout from '../layouts/Layout.astro';
-import TejusGallery from '../components/TejusGallery.vue';
+import AnwarGallery from '../components/AnwarGallery.vue';
 import ThejusContent from '../components/ThejusContent.astro';
 import StaysContent from '../components/Stays/StaysContent.astro';
 import Amenites from '../components/Amenites/Amenites.astro';
@@ -12,7 +12,6 @@ import '@fontsource/prata';
 import '@fontsource-variable/raleway';
 import '@fontsource/poppins';
 import '../styles/global.css';
-import Activites from '../components/Activites/Activites.astro';
 import Review from '../components/Reviews/Review.astro';
 import Contact from '../components/Contact.astro';
 import Rudra from '../components/Rudra.astro';
@@ -27,7 +26,7 @@ import Socials from '../components/Socials.astro';
 
 <Layout >
 	<Navbar client:load class="overflow-x-hidden"/>
-	<TejusGallery 
+	<AnwarGallery 
 	client:load
     images={data.image}
     card={data}/>
@@ -41,7 +40,6 @@ import Socials from '../components/Socials.astro';
 	<div id="exp" />
 	<Amenites />
 	
-	<Activites />
 	<Celebrate />
 	
 	<Photoshoot	/>

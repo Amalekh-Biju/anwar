@@ -55,7 +55,8 @@
         <img 
           :src="images[currentIndex]" 
           :alt="`Gallery image ${currentIndex + 1}`" 
-          class="max-h-full max-w-full object-contain transition-opacity duration-300"
+          class="max-h-full max-w-full object-contain transition-all duration-300"
+          :style="{ transform: `scale(${zoomLevel})` }"
           @load="onImageLoad"
           @error="onImageError"
         />
@@ -65,8 +66,9 @@
           @click="prevImage" 
           class="nav-button nav-button-left"
           aria-label="Previous image"
+          v-show="images.length > 1"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
@@ -75,11 +77,34 @@
           @click="nextImage" 
           class="nav-button nav-button-right"
           aria-label="Next image"
+          v-show="images.length > 1"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </button>
+
+        <!-- Zoom controls -->
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-4">
+          <button 
+            @click="zoomOut" 
+            class="bg-black bg-opacity-75 text-white p-2 rounded-full hover:bg-opacity-90"
+            aria-label="Zoom out"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H9" />
+            </svg>
+          </button>
+          <button 
+            @click="zoomIn" 
+            class="bg-black bg-opacity-75 text-white p-2 rounded-full hover:bg-opacity-90"
+            aria-label="Zoom in"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -96,7 +121,10 @@ export default {
   data() {
     return {
       isFullscreen: false,
-      currentIndex: 0
+      currentIndex: 0,
+      zoomLevel: 1,
+      minZoom: 0.5,
+      maxZoom: 3
     }
   },
   computed: {
@@ -122,13 +150,26 @@ export default {
     },
     closeFullscreen() {
       this.isFullscreen = false;
+      this.zoomLevel = 1; // Reset zoom when closing
       document.body.classList.remove('overflow-hidden');
     },
     nextImage() {
       this.currentIndex = (this.currentIndex + 1) % this.images.length;
+      this.zoomLevel = 1; // Reset zoom when changing images
     },
     prevImage() {
       this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+      this.zoomLevel = 1; // Reset zoom when changing images
+    },
+    zoomIn() {
+      if (this.zoomLevel < this.maxZoom) {
+        this.zoomLevel = Math.min(this.zoomLevel + 0.25, this.maxZoom);
+      }
+    },
+    zoomOut() {
+      if (this.zoomLevel > this.minZoom) {
+        this.zoomLevel = Math.max(this.zoomLevel - 0.25, this.minZoom);
+      }
     },
     handleKeyDown(e) {
       if (!this.isFullscreen) return;

@@ -1,10 +1,10 @@
-# Nellupura by Tejus - Luxury Homestay Website
+# Anwar Sports Arena - Event Venue Website
 
-A modern, responsive website for **Nellupura by Tejus**, a luxury homestay located in the tranquil village of Nellupura, Kerala. Built with Astro, Vue.js, and TailwindCSS for optimal performance and user experience.
+A modern, responsive website for **Anwar Sports Arena**, a versatile event venue perfect for weddings, parties, corporate events, and celebrations. Built with Astro, Vue.js, and TailwindCSS for optimal performance and user experience.
 
-## 🏡 About the Project
+## About
 
-Nellupura by Tejus is a charming private retreat nestled amidst rolling hills and serene paddy fields in Kerala. This website showcases the property's luxury accommodations, amenities, activities, and provides booking functionality for guests.
+Anwar Sports Arena is a stunning event venue featuring professional lighting, sound systems, and spacious layout perfect for memorable occasions. This website showcases the venue's capabilities, services, amenities, and provides booking functionality for events.
 
 ### Key Features
 
@@ -28,7 +28,7 @@ Nellupura by Tejus is a charming private retreat nestled amidst rolling hills an
 ## 📁 Project Structure
 
 ```text
-tejus/
+anwar-sports-arena/
 ├── public/                     # Static assets
 │   ├── bg.jpg                 # Background image
 │   ├── favicon.svg            # Site favicon
@@ -52,7 +52,7 @@ tejus/
 │   │   ├── Photoshoot.astro   # Photoshoot services
 │   │   ├── Rudra.astro        # Rudra Properties showcase
 │   │   ├── Socials.astro      # Social media links
-│   │   ├── TejusGallery.vue   # Hero image carousel
+│   │   ├── AnwarGallery.vue   # Hero image carousel
 │   │   └── ThejusContent.astro # About us section
 │   ├── data/                  # JSON data files
 │   │   ├── activitesdata.json # Activities information
@@ -85,8 +85,8 @@ Make sure you have the following installed:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/Glitchyi/tejus.git
-   cd tejus
+   git clone https://github.com/Glitchyi/anwar-sports-arena.git
+   cd anwar-sports-arena
    ```
 
 2. **Install dependencies**
@@ -126,7 +126,7 @@ All commands are run from the root of the project:
 
 ### Content Sections
 
-- **TejusGallery.vue**: Hero image carousel with automatic slideshow and navigation controls
+- **AnwarGallery.vue**: Hero image carousel with automatic slideshow and navigation controls
 - **ThejusContent.astro**: About us section describing the homestay's location and charm
 - **StaysContent.astro**: Room showcase with detailed information and booking functionality
 - **Amenites.astro**: Grid display of all available amenities with icons
@@ -238,15 +238,15 @@ The built files will be in the `./dist/` directory, ready for deployment.
 
 ## 📞 Contact & Support
 
-- **Website**: [nellupurabytejus.com](https://nellupurabytejus.com/)
-- **Email**: [rudragroupsadm@gmail.com](mailto:rudragroupsadm@gmail.com)
+- **Website**: [anwarsportsarena.com](https://anwarsportsarena.com/)
+- **Email**: [contact@anwarsportsarena.com](mailto:contact@anwarsportsarena.com)
 - **Phone**: [+91 97782 38199](tel:+919778238199)
-- **Instagram**: [@nellupurabytejus](https://www.instagram.com/nellupurabytejus/)
-- **Facebook**: [Nellupura by Tejus](https://www.facebook.com/profile.php?id=61573624507968)
+- **Instagram**: [@anwarsportsarena](https://www.instagram.com/anwarsportsarena/)
+- **Facebook**: [Anwar Sports Arena](https://www.facebook.com/anwarsportsarena)
 
 ## 📄 License
 
-This project is developed for **Rudra Groups** and **Nellupura by Tejus**. All rights reserved.
+This project is developed for **Anwar Sports Arena**. All rights reserved.
 
 ---
 

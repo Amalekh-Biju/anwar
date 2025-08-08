@@ -50,10 +50,10 @@ interface Review {
 //  Sample Review
 // {
 //     "id": "1",
-//     "image": "/thejus/Thejus0.jpeg",
+//     "image": "/anwar/Anwar0.jpeg",
 //     "name": "Advaith Narayanan",
 //     "rating": 3,
-//     "comment": "This Place is super spaciouos and the service is great! definitely coming back again"
+//     "comment": "Perfect venue for our event! The space is amazing and service is excellent!"
 // }
 export default {
     props: {

@@ -20,12 +20,27 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.rudra {
-    background: linear-gradient(196.77deg, #B0905A 25.47%, #8E5B00 117.67%);
+.anwar {
+    background: linear-gradient(196.77deg, #1E40AF 25.47%, #059669 117.67%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.rudrabg {
-    background: linear-gradient(196.77deg, #B0905A 25.47%, #8E5B00 117.67%);
+.anwarbg {
+    background: linear-gradient(196.77deg, #1E40AF 25.47%, #059669 117.67%);
+}
+
+.sports-accent {
+    background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+}
+
+.court-card {
+    background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+    border: 2px solid #E2E8F0;
+    transition: all 0.3s ease;
+}
+
+.court-card:hover {
+    border-color: #3B82F6;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.1);
 }
 
