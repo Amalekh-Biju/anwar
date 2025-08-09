@@ -1,37 +1,34 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.vue';
-import Footer from '../components/Footer.astro';
-import Contact from '../components/Contact.astro';
-import AnwarGallery from '../components/AnwarGallery.vue';
-import Amenites from '../components/Amenites/Amenites.astro';
-import Review from '../components/Reviews/Review.astro';
-import ImageGallery from '../components/Gallery/ImageGallery.vue';
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.vue";
+import Footer from "../components/Footer.astro";
+import Contact from "../components/Contact.astro";
+import AnwarGallery from "../components/AnwarGallery.vue";
+import Amenites from "../components/Amenites/Amenites.astro";
+import Review from "../components/Reviews/Review.astro";
+import ImageGallery from "../components/Gallery/ImageGallery.vue";
 
-import anwarData from '../data/anwar-data.json';
+import anwarData from "../data/anwar-data.json";
 
-import '@fontsource/prata';
-import '@fontsource-variable/raleway';
-import '@fontsource/poppins';
-import '../styles/global.css';
+import "@fontsource/prata";
+import "@fontsource-variable/raleway";
+import "@fontsource/poppins";
+import "../styles/global.css";
 ---
 
 <Layout>
   <Navbar client:load />
-  
+
   <!-- Hero Section -->
   <div class="pt-20">
-    <AnwarGallery 
-      client:load
-      images={anwarData.images}
-      card={anwarData}
-    />
+    <AnwarGallery client:load images={anwarData.images} card={anwarData} />
   </div>
 
   <!-- About Section -->
-  <div class="w-full flex flex-col justify-center items-center gap-8 lg:gap-16 lg:px-64 px-4 py-16 lg:py-32">
+  <div
+    class="w-full flex flex-col justify-center items-center gap-8 lg:gap-16 lg:px-64 px-4 py-16 lg:py-32">
     <h1 class="lg:text-5xl text-2xl font-bold text-center">ANWAR ARENA</h1>
-    
+
     <div class="w-full">
       <div class="block">
         <p class="text-center lg:text-3xl/10 prata px-10">
@@ -44,15 +41,17 @@ import '../styles/global.css';
     <div class="w-full max-w-4xl">
       <h2 class="text-3xl font-bold text-center mb-8">Key Features</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {anwarData.keyFeatures.map((feature) => (
-          <div class="flex items-start gap-4 p-6 bg-gray-50 rounded-lg">
-            <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 flex-shrink-0"></div>
-            <div>
-              <h3 class="font-semibold text-lg mb-2">{feature.title}</h3>
-              <p class="text-gray-600">{feature.description}</p>
+        {
+          anwarData.keyFeatures.map((feature) => (
+            <div class="flex items-start gap-4 p-6 bg-gray-50 rounded-lg">
+              <div class="w-2 h-2 bg-blue-600 rounded-full mt-3 flex-shrink-0" />
+              <div>
+                <h3 class="font-semibold text-lg mb-2">{feature.title}</h3>
+                <p class="text-gray-600">{feature.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        }
       </div>
     </div>
 
@@ -61,12 +60,16 @@ import '../styles/global.css';
       <h2 class="text-3xl font-bold text-center mb-8">Specifications</h2>
       <div class="bg-white border rounded-lg p-8 shadow-sm">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {Object.entries(anwarData.specifications).map(([key, value]) => (
-            <div class="flex justify-between items-center py-2 border-b border-gray-100">
-              <span class="font-medium capitalize">{key.replace(/([A-Z])/g, ' $1')}</span>
-              <span class="text-gray-600">{value}</span>
-            </div>
-          ))}
+          {
+            Object.entries(anwarData.specifications).map(([key, value]) => (
+              <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                <span class="font-medium capitalize">
+                  {key.replace(/([A-Z])/g, " $1")}
+                </span>
+                <span class="text-gray-600">{value}</span>
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
