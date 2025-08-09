@@ -1,54 +1,87 @@
 ---
 import Navbar from '../components/Navbar.vue';
 import Layout from '../layouts/Layout.astro';
-import AnwarGallery from '../components/AnwarGallery.vue';
-import ThejusContent from '../components/ThejusContent.astro';
-import StaysContent from '../components/Stays/StaysContent.astro';
-import Amenites from '../components/Amenites/Amenites.astro';
-
-import data from '../data/propertydata.json';
+import Footer from '../components/Footer.astro';
+import Contact from '../components/Contact.astro';
+import Rudra from '../components/Rudra.astro';
+import Socials from '../components/Socials.astro';
 
 import '@fontsource/prata';
 import '@fontsource-variable/raleway';
 import '@fontsource/poppins';
 import '../styles/global.css';
-import Review from '../components/Reviews/Review.astro';
-import Contact from '../components/Contact.astro';
-import Rudra from '../components/Rudra.astro';
-import Footer from '../components/Footer.astro';
-import Gallery from '../components/Gallery/Gallery.astro';
-import Photoshoot from '../components/Photoshoot.astro';
-import Celebrate from '../components/Celebrate/Celebrate.astro';
-import Socials from '../components/Socials.astro';
 ---
 
 
 
 <Layout >
-	<Navbar client:load class="overflow-x-hidden"/>
-	<AnwarGallery 
-	client:load
-    images={data.image}
-    card={data}/>
+	<Navbar client:load />
+	
+	<!-- Hero Section -->
+	<div class="relative w-full h-screen overflow-hidden pt-20">
+		<div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60 z-10"></div>
+		<img 
+			src="/bg.jpg" 
+			alt="Rudra Group Properties" 
+			class="w-full h-full object-cover"
+		/>
+		<div class="absolute inset-0 z-20 flex items-center justify-center">
+			<div class="text-center text-white px-4">
+				<h1 class="text-4xl lg:text-7xl font-bold mb-6">RUDRA GROUP</h1>
+				<p class="text-xl lg:text-3xl mb-8 prata">Premium Properties & Event Venues</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/anwar-arena" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+						Anwar Arena
+					</a>
+					<a href="/nirmala-mansion" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+						Nirmala Mansion
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<div id="about" />
-	<ThejusContent />
-	
-	<div id="stay" />
-	<StaysContent />
+	<!-- Properties Overview -->
+	<div class="w-full py-16 lg:py-32 px-4 lg:px-64">
+		<h2 class="text-3xl lg:text-5xl font-bold text-center mb-16">Our Properties</h2>
+		
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+			<!-- Anwar Arena Card -->
+			<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+				<img src="/anwar/Anwar0.jpeg" alt="Anwar Arena" class="w-full h-64 object-cover" />
+				<div class="p-8">
+					<h3 class="text-2xl font-bold mb-4">Anwar Arena</h3>
+					<p class="text-gray-600 mb-6">Premier sports and event venue with modern facilities, perfect for tournaments, weddings, and corporate events.</p>
+					<div class="flex flex-wrap gap-2 mb-6">
+						<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Sports Facility</span>
+						<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Event Venue</span>
+						<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Climate Control</span>
+					</div>
+					<a href="/anwar-arena" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors inline-block">
+						Learn More
+					</a>
+				</div>
+			</div>
 
-	<div id="exp" />
-	<Amenites />
-	
-	<Celebrate />
-	
-	<Photoshoot	/>
-	
-	<div id="gallery" />
-	<Gallery />
+			<!-- Nirmala Mansion Card -->
+			<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+				<img src="/nirmala/Nirmala0.jpeg" alt="Nirmala Mansion" class="w-full h-64 object-cover" />
+				<div class="p-8">
+					<h3 class="text-2xl font-bold mb-4">Nirmala Mansion</h3>
+					<p class="text-gray-600 mb-6">Luxury residential apartments combining traditional elegance with modern amenities in a serene environment.</p>
+					<div class="flex flex-wrap gap-2 mb-6">
+						<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Luxury Living</span>
+						<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Modern Amenities</span>
+						<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Family-Friendly</span>
+					</div>
+					<a href="/nirmala-mansion" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors inline-block">
+						Learn More
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<Review/>
-	
 	<div id="contact" />
 	<Contact/>
 

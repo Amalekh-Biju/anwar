@@ -1,0 +1,115 @@
+{
+  "title": "Nirmala Mansion",
+  "heroImage": "/nirmala/Nirmala0.jpeg",
+  "description": "Experience luxury and comfort at Nirmala Mansion, an exquisite residential property that combines traditional elegance with modern amenities. Our carefully designed spaces offer the perfect blend of style, comfort, and functionality, making it an ideal choice for families seeking a premium living experience in a serene environment.",
+  "tagline": "Luxury Living Redefined",
+  "highlights": [
+    "Premium Apartments",
+    "Modern Amenities", 
+    "Scenic Location",
+    "Family-Friendly"
+  ],
+  "keyFeatures": [
+    {
+      "title": "Spacious Apartments",
+      "description": "Thoughtfully designed 2BHK and 3BHK apartments with optimal space utilization, natural lighting, and premium finishes."
+    },
+    {
+      "title": "Modern Kitchen",
+      "description": "Fully equipped modular kitchens with premium appliances, granite countertops, and ample storage space."
+    },
+    {
+      "title": "Balconies with Views",
+      "description": "Private balconies offering panoramic views of the surrounding landscape and fresh air circulation."
+    },
+    {
+      "title": "Security & Safety",
+      "description": "24/7 security surveillance, intercom system, and fire safety measures ensuring complete peace of mind."
+    },
+    {
+      "title": "Green Spaces",
+      "description": "Landscaped gardens, children's play area, and open spaces promoting a healthy and active lifestyle."
+    },
+    {
+      "title": "Premium Interiors",
+      "description": "High-quality flooring, modern lighting fixtures, and premium bathroom fittings throughout the property."
+    }
+  ],
+  "propertyDetails": {
+    "totalUnits": "12 Apartments",
+    "apartmentTypes": "2BHK & 3BHK",
+    "builtUpArea": "950-1350 sq ft",
+    "commonArea": "2,000 sq ft",
+    "parkingSpaces": "15 covered spots",
+    "constructionYear": "2023",
+    "totalFloors": "4 floors",
+    "elevatorAccess": "Available"
+  },
+  "amenities": [
+    {
+      "name": "24/7 Security",
+      "icon": "🛡️"
+    },
+    {
+      "name": "Covered Parking",
+      "icon": "🚗"
+    },
+    {
+      "name": "Elevator",
+      "icon": "🏢"
+    },
+    {
+      "name": "Children's Play Area",
+      "icon": "🎠"
+    },
+    {
+      "name": "Landscaped Garden",
+      "icon": "🌳"
+    },
+    {
+      "name": "CCTV Surveillance",
+      "icon": "📹"
+    },
+    {
+      "name": "Intercom System",
+      "icon": "📞"
+    },
+    {
+      "name": "Power Backup",
+      "icon": "⚡"
+    },
+    {
+      "name": "Water Storage",
+      "icon": "💧"
+    },
+    {
+      "name": "Waste Management",
+      "icon": "♻️"
+    },
+    {
+      "name": "Fire Safety",
+      "icon": "🔥"
+    },
+    {
+      "name": "WiFi Ready",
+      "icon": "📶"
+    }
+  ],
+  "gallery": [
+    "/nirmala/Nirmala0.jpeg",
+    "/anwar/Anwar0.jpeg",
+    "/anwar/Anwar1.jpeg"
+  ],
+  "location": {
+    "address": "Nirmala Mansion, Kerala",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  "contact": {
+    "phone": "+91 9778238199",
+    "email": "info@nirmalamansion.com",
+    "whatsapp": "+919778238199"
+  }
+}

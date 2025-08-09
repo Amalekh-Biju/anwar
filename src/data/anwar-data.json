@@ -1,0 +1,76 @@
+{
+  "title": "Anwar Arena",
+  "images": [
+    "/anwar/Anwar0.jpeg",
+    "/anwar/Anwar1.jpeg"
+  ],
+  "description": "Welcome to Anwar Arena, your premier destination for unforgettable events and celebrations. Our state-of-the-art sports and event facility combines modern amenities with versatile spaces, perfect for weddings, corporate events, sports tournaments, and special occasions. With professional-grade facilities and comprehensive event services, we transform your vision into reality.",
+  "tagline": "Premium Sports & Event Venue",
+  "highlights": [
+    "Modern Sports Facilities",
+    "Event Venue",
+    "Professional Lighting",
+    "Climate Control"
+  ],
+  "keyFeatures": [
+    {
+      "title": "Multi-Purpose Sports Arena", 
+      "description": "Professional-grade sports courts suitable for basketball, badminton, volleyball, and indoor football with proper lighting and ventilation."
+    },
+    {
+      "title": "Event Hall",
+      "description": "Elegant event space perfect for weddings, receptions, corporate events, and celebrations with capacity for up to 200 guests."
+    },
+    {
+      "title": "Professional Audio/Visual",
+      "description": "State-of-the-art sound system, professional lighting, and AV equipment for events and sports broadcasting."
+    },
+    {
+      "title": "Climate Control",
+      "description": "Advanced HVAC system ensuring optimal temperature and air quality throughout all facilities."
+    },
+    {
+      "title": "Catering Facilities",
+      "description": "Professional kitchen and catering services available for events with customizable menu options."
+    },
+    {
+      "title": "Ample Parking",
+      "description": "Spacious parking area accommodating over 50 vehicles with easy access to all facilities."
+    }
+  ],
+  "specifications": {
+    "totalArea": "15,000 sq ft",
+    "sportsArena": "8,000 sq ft",
+    "eventHall": "4,000 sq ft",
+    "capacity": "200 people",
+    "parkingSpaces": "50+ vehicles",
+    "operatingHours": "6 AM - 11 PM",
+    "bookingAdvance": "30 days",
+    "minimumBooking": "2 hours"
+  },
+  "amenities": [
+    "Professional Sports Courts",
+    "Event Hall",
+    "Sound System",
+    "Professional Lighting",
+    "Climate Control",
+    "Catering Kitchen",
+    "Changing Rooms",
+    "Equipment Storage",
+    "Security System",
+    "WiFi",
+    "Parking"
+  ],
+  "location": {
+    "address": "Anwar Sports Arena, Kerala",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  "contact": {
+    "phone": "+91 9778238199",
+    "email": "info@anwararena.com",
+    "whatsapp": "+919778238199"
+  }
+}
